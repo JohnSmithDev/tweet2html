@@ -11,6 +11,7 @@ FUNCTIONALITY
 -------------
 
 The following conversions take place:
+
 1. @foo is converted to a hyperlink to that person's Twitter page
 2. #foo is converted to a search link on Twitter for that hashtag
 3. Anything beginning http:// or https:// is converted to a
@@ -44,14 +45,14 @@ Super simple form:
 
 A more involved example:
 
-   import tweet2html
-   html, images = tweet2html.format("@fred: Visit http://john-smith.me #blah",
-                    check_links=True,
-                    css_classes={ "url": "my-url-css-class",
-                                  "person": "my-tweeter-class",
-                                  "topic": "my-hashtag-css-class" },
-                    return_images=True,
-                    convert_redirects=True)
+    import tweet2html
+    html, images = tweet2html.format("@fred: Visit http://john-smith.me #blah",
+                     check_links=True,
+                     css_classes={ "url": "my-url-css-class",
+                                   "person": "my-tweeter-class",
+                                   "topic": "my-hashtag-css-class" },
+                     return_images=True,
+                     convert_redirects=True)
 
 FURTHER NOTES
 -------------
@@ -104,7 +105,9 @@ CREDITS
 Written by John Smith 2010/2011, apart from some urllib2-related
 bits copied/adapted from posts on Stack Overflow - links to the
 SO posts are in the code.
+
 My blog (which uses this code): http://www.john-smith.me
+
 My Twitter: JohnMMIX
 
 LICENCE
