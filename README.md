@@ -13,7 +13,7 @@ FUNCTIONALITY
 The following conversions take place:
 
 1. @foo is converted to a hyperlink to that person's Twitter page
-2. #foo is converted to a search link on Twitter for that hashtag
+2. Hashtag #foo is converted to a search link on Twitter for that hashtag
 3. Anything beginning http:// or https:// is converted to a
    proper link.
 4. URLs can optionally be tested, this is recommended to avoid
